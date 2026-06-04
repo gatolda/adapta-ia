@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO ============ -->
+<title>Adapta IA · Asesorías en Inteligencia Artificial para personas y empresas</title>
+<meta name="description" content="Asesoría en inteligencia artificial para personas y empresas en Chile y LatAm. Consultoría, automatización, chatbots y conexión de equipos y máquinas a la IA (IoT): vending de agua y control de clima inteligentes. Diagnóstico sin costo." />
+<meta name="keywords" content="inteligencia artificial, asesoría IA, consultoría IA, automatización con IA, chatbots, capacitación IA, IA para empresas, IA Chile, IoT con IA, integración de máquinas, vending inteligente, control de clima inteligente, mantenimiento predictivo, transformación digital" />
+<meta name="author" content="Adapta IA" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a1020" />
+<link rel="canonical" href="https://www.adaptaia.cl/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_CL" />
+<meta property="og:site_name" content="Adapta IA" />
+<meta property="og:title" content="Adapta IA · Asesorías en Inteligencia Artificial" />
+<meta property="og:description" content="Lleva la inteligencia artificial de la teoría a resultados reales. Consultoría, automatización, chatbots y capacitación para personas y empresas." />
+<meta property="og:url" content="https://www.adaptaia.cl/" />
+<meta property="og:image" content="https://www.adaptaia.cl/og-image.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Adapta IA · Asesorías en Inteligencia Artificial" />
+<meta name="twitter:description" content="Consultoría, automatización, chatbots y capacitación en IA para personas y empresas." />
+<meta name="twitter:image" content="https://www.adaptaia.cl/og-image.jpg" />
+
+<!-- Favicon (inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a1020'/><path d='M50 18 L58 42 L82 50 L58 58 L50 82 L42 58 L18 50 L42 42 Z' fill='%232fd4d4'/></svg>" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Structured data: ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Adapta IA",
+  "description": "Asesorías en inteligencia artificial para personas y empresas: consultoría estratégica, automatización de procesos, chatbots y capacitación.",
+  "url": "https://www.adaptaia.cl/",
+  "email": "impo.rrchile@gmail.com",
+  "areaServed": [{ "@type": "Country", "name": "Chile" }, { "@type": "Place", "name": "Latinoamérica" }],
+  "serviceType": ["Consultoría en inteligencia artificial", "Automatización de procesos", "Desarrollo de chatbots y agentes de IA", "Integración de equipos y máquinas con IA (IoT)", "Capacitación en IA"],
+  "priceRange": "$$",
+  "knowsLanguage": "es",
+  "slogan": "Inteligencia artificial aplicada a tu negocio y a tu día a día."
+}
+</script>
+
+<style>
+/* ============================================================
+   ADAPTA IA — Editorial dark · warm gold
+   ============================================================ */
+:root{
+  --bg:#0a1020;
+  --bg-2:#0d1526;
+  --panel:#111a30;
+  --panel-2:#16203a;
+  --line:rgba(200,220,255,.10);
+  --line-strong:rgba(200,220,255,.18);
+  --ink:#eaf0f8;
+  --ink-dim:#b6c4dc;
+  --muted:#7e8ba8;
+  --gold:#2fd4d4;
+  --gold-deep:#15a8b4;
+  --gold-soft:rgba(47,212,212,.12);
+  --teal:#6b8cff;
+  --maxw:1180px;
+  --r:18px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--gold);color:#04141c}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* Atmospheric background */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(60vw 50vh at 80% -10%, rgba(47,212,212,.10), transparent 60%),
+    radial-gradient(50vw 50vh at 10% 0%, rgba(107,140,255,.05), transparent 55%);
+}
+/* Grain overlay */
+body::after{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{position:relative;z-index:1}
+
+.container{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* ---------- Typography helpers ---------- */
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.7}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;line-height:1.05;letter-spacing:-.015em}
+.display{font-size:clamp(2.6rem,6vw,4.7rem);font-weight:600}
+.serif-italic{font-style:italic;font-weight:500;color:var(--gold)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--ink-dim);max-width:62ch}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-weight:600;font-size:15.5px;
+  padding:14px 26px;border-radius:100px;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease), background .25s, color .25s, box-shadow .25s;
+}
+.btn-primary{background:var(--gold);color:#04141c;box-shadow:0 8px 30px -10px rgba(47,212,212,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px -10px rgba(47,212,212,.75)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn .arr{transition:transform .25s var(--ease)}
+.btn:hover .arr{transform:translate(3px,-1px)}
+
+/* ---------- Nav ---------- */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  transition:background .35s, border-color .35s, backdrop-filter .35s;
+  border-bottom:1px solid transparent;
+}
+header.nav.scrolled{
+  background:rgba(10,16,32,.78);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-weight:600;font-size:20px;letter-spacing:-.01em}
+.brand .mark{width:30px;height:30px;flex:0 0 auto}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-size:15px;color:var(--ink-dim);transition:color .2s;position:relative}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:16px}
+.burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:24px;position:relative}
+.burger span{position:absolute;left:0;height:2px;width:100%;background:var(--ink);border-radius:2px;transition:.3s var(--ease)}
+.burger span:nth-child(1){top:2px}.burger span:nth-child(2){top:11px}.burger span:nth-child(3){top:20px}
+.burger.open span:nth-child(1){top:11px;transform:rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){top:11px;transform:rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{padding:170px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{margin:22px 0 26px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 26px}
+.trust{display:flex;gap:8px 20px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust .dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* Hero visual card */
+.hero-card{
+  position:relative;border:1px solid var(--line);border-radius:24px;
+  background:linear-gradient(160deg,var(--panel),var(--bg-2));
+  padding:30px;overflow:hidden;
+  box-shadow:0 40px 90px -40px rgba(0,0,0,.8);
+}
+.hero-card::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0,rgba(47,212,212,.14),transparent 55%);pointer-events:none}
+.hc-row{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.hc-row:last-child{border-bottom:0;padding-bottom:0}
+.hc-row:first-child{padding-top:0}
+.hc-ico{width:42px;height:42px;border-radius:12px;flex:0 0 auto;display:grid;place-items:center;background:var(--gold-soft);border:1px solid rgba(47,212,212,.25)}
+.hc-ico svg{width:20px;height:20px;stroke:var(--gold)}
+.hc-row b{font-weight:600;font-size:15.5px}
+.hc-row p{font-size:13px;color:var(--muted);margin-top:1px}
+.hc-badge{position:absolute;top:18px;right:18px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--teal);border:1px solid rgba(107,140,255,.3);padding:5px 10px;border-radius:100px}
+
+/* ---------- Marquee strip ---------- */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding:18px 0}
+.strip-track{display:flex;gap:54px;white-space:nowrap;animation:scroll 32s linear infinite;width:max-content}
+.strip-track span{font-family:'Fraunces',serif;font-style:italic;font-size:19px;color:var(--ink-dim);display:inline-flex;align-items:center;gap:54px}
+.strip-track span::after{content:"✦";color:var(--gold);font-style:normal;font-size:13px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- Section base ---------- */
+section.block{padding:100px 0;position:relative}
+.sec-head{max-width:720px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(2rem,4vw,3.1rem);margin:18px 0 16px}
+.sec-head p{color:var(--ink-dim);font-size:1.08rem}
+
+/* ---------- Audience ---------- */
+.aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.aud{border:1px solid var(--line);border-radius:var(--r);padding:38px;background:linear-gradient(165deg,var(--panel),var(--bg-2));position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.aud:hover{border-color:var(--line-strong);transform:translateY(-4px)}
+.aud .tag{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.aud h3{font-size:1.7rem;margin:14px 0 12px}
+.aud p{color:var(--ink-dim);margin-bottom:20px}
+.aud ul{list-style:none;display:grid;gap:11px}
+.aud li{display:flex;gap:11px;font-size:15px;color:var(--ink-dim)}
+.aud li svg{width:18px;height:18px;stroke:var(--gold);flex:0 0 auto;margin-top:3px}
+.aud .glyph{position:absolute;top:-20px;right:-10px;font-family:'Fraunces',serif;font-size:130px;color:var(--gold);opacity:.06;line-height:1;font-weight:900}
+
+/* ---------- Services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.svc{border:1px solid var(--line);border-radius:var(--r);padding:34px;background:var(--panel);position:relative;overflow:hidden;transition:.35s var(--ease)}
+.svc::after{content:"";position:absolute;inset:0;background:radial-gradient(80% 60% at 0 0,var(--gold-soft),transparent 60%);opacity:0;transition:opacity .4s}
+.svc:hover{transform:translateY(-5px);border-color:var(--line-strong)}
+.svc:hover::after{opacity:1}
+.svc .num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);letter-spacing:.1em}
+.svc .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--gold-soft);border:1px solid rgba(47,212,212,.22);margin:18px 0 20px;transition:.35s var(--ease)}
+.svc:hover .ico{background:var(--gold);}
+.svc .ico svg{width:25px;height:25px;stroke:var(--gold);transition:.35s}
+.svc:hover .ico svg{stroke:#04141c}
+.svc h3{font-size:1.4rem;margin-bottom:10px}
+.svc p{color:var(--ink-dim);font-size:15.5px}
+
+/* ---------- Process ---------- */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.step{padding:34px 28px;border-right:1px solid var(--line);position:relative;transition:background .3s}
+.step:last-child{border-right:0}
+.step:hover{background:var(--panel)}
+.step .n{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--gold);font-weight:600;line-height:1}
+.step h3{font-size:1.25rem;margin:16px 0 9px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+/* ---------- Stats / why now ---------- */
+.why{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat{background:var(--bg);padding:30px 26px}
+.stat b{font-family:'Fraunces',serif;font-size:2.5rem;color:var(--ink);display:block;line-height:1}
+.stat span{color:var(--muted);font-size:14px;margin-top:8px;display:block}
+.why-list{display:grid;gap:18px;margin-top:24px}
+.why-list li{display:flex;gap:14px;list-style:none}
+.why-list .b{width:38px;height:38px;border-radius:10px;flex:0 0 auto;display:grid;place-items:center;background:var(--gold-soft);border:1px solid rgba(47,212,212,.2)}
+.why-list .b svg{width:18px;height:18px;stroke:var(--gold)}
+.why-list strong{display:block;font-size:15.5px;font-weight:600}
+.why-list p{color:var(--muted);font-size:14px}
+
+/* ---------- Testimonials ---------- */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tst{border:1px solid var(--line);border-radius:var(--r);padding:30px;background:var(--panel);display:flex;flex-direction:column;gap:18px}
+.tst .quote{font-family:'Fraunces',serif;font-size:1.12rem;line-height:1.5;color:var(--ink-dim)}
+.tst .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.tst .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-deep));display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:600;color:#04141c;flex:0 0 auto}
+.tst .who b{font-size:14.5px;display:block}
+.tst .who span{font-size:13px;color:var(--muted)}
+.stars{color:var(--gold);font-size:14px;letter-spacing:2px}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:12px;max-width:840px}
+details.qa{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:0 26px;transition:border-color .3s}
+details.qa[open]{border-color:var(--line-strong)}
+details.qa summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:1.05rem}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary .plus{width:24px;height:24px;flex:0 0 auto;position:relative;transition:transform .3s}
+details.qa[open] summary .plus{transform:rotate(45deg)}
+details.qa summary .plus::before,details.qa summary .plus::after{content:"";position:absolute;background:var(--gold);border-radius:2px}
+details.qa summary .plus::before{top:11px;left:3px;right:3px;height:2px}
+details.qa summary .plus::after{left:11px;top:3px;bottom:3px;width:2px}
+details.qa .ans{padding:0 0 24px;color:var(--ink-dim);font-size:15.5px;max-width:70ch}
+
+/* ---------- Contact ---------- */
+.contact{position:relative}
+.contact-card{
+  border:1px solid var(--line-strong);border-radius:26px;overflow:hidden;
+  display:grid;grid-template-columns:.85fr 1.15fr;
+  background:linear-gradient(160deg,var(--panel-2),var(--bg-2));
+}
+.contact-aside{padding:48px;border-right:1px solid var(--line);position:relative;overflow:hidden}
+.contact-aside::before{content:"";position:absolute;inset:0;background:radial-gradient(100% 70% at 0 100%,rgba(47,212,212,.14),transparent 60%);pointer-events:none}
+.contact-aside h2{font-size:2.2rem;margin:16px 0 14px}
+.contact-aside p{color:var(--ink-dim);margin-bottom:26px}
+.contact-aside .ci{display:flex;align-items:center;gap:13px;margin-bottom:16px;font-size:15px;color:var(--ink-dim)}
+.contact-aside .ci svg{width:19px;height:19px;stroke:var(--gold);flex:0 0 auto}
+.contact-form{padding:48px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+.field input,.field select,.field textarea{
+  width:100%;background:var(--bg);border:1px solid var(--line-strong);
+  border-radius:12px;padding:14px 16px;color:var(--ink);font:inherit;font-size:15px;
+  transition:border-color .25s,box-shadow .25s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft);
+}
+.field textarea{resize:vertical;min-height:110px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note{font-size:13px;color:var(--muted);margin-top:14px}
+.form-msg{margin-top:16px;font-size:15px;display:none;padding:14px 16px;border-radius:12px}
+.form-msg.ok{display:block;background:rgba(107,140,255,.1);border:1px solid rgba(107,140,255,.3);color:var(--teal)}
+.form-msg.err{display:block;background:rgba(240,120,71,.1);border:1px solid rgba(240,120,71,.3);color:#f0a071}
+.hp{position:absolute;left:-9999px;opacity:0}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);padding:60px 0 36px;margin-top:30px}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand{max-width:330px}
+.foot-brand p{color:var(--muted);font-size:14.5px;margin-top:14px}
+.foot-col h4{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:500}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14.5px;margin-bottom:10px;transition:color .2s}
+.foot-col a:hover{color:var(--gold)}
+.foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13.5px}
+
+/* ---------- Integraciones / IoT ---------- */
+.iot{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.iot-flow{display:grid;grid-template-columns:1fr 180px 1fr;align-items:center;margin:8px 0 50px}
+.flow-col{display:grid;gap:13px}
+.flow-col .lbl{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.chip{display:flex;align-items:center;gap:12px;border:1px solid var(--line-strong);background:var(--panel);border-radius:12px;padding:13px 15px;font-size:14.5px;font-weight:500;transition:transform .3s var(--ease),border-color .3s}
+.chip svg{width:20px;height:20px;stroke:var(--gold);flex:0 0 auto;fill:none}
+.flow-col.left .chip:hover{border-color:var(--gold);transform:translateX(5px)}
+.flow-col.right .chip:hover{border-color:var(--gold);transform:translateX(-5px)}
+.flow-core{position:relative;display:grid;place-items:center}
+.flow-core::before,.flow-core::after{content:"";position:absolute;top:50%;width:40px;border-top:2px dashed rgba(47,212,212,.4);transform:translateY(-50%)}
+.flow-core::before{left:0}
+.flow-core::after{right:0}
+.core{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;text-align:center;line-height:1.05;
+  background:radial-gradient(circle at 32% 28%,#9ff5f0,var(--gold-deep));color:#04141c;
+  font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;
+  box-shadow:0 0 0 10px var(--gold-soft),0 22px 55px -18px rgba(47,212,212,.7);
+  animation:corepulse 3.2s ease-in-out infinite}
+.core small{display:block;font-family:'JetBrains Mono',monospace;font-weight:400;font-size:9px;letter-spacing:.14em;margin-top:4px;opacity:.65}
+@keyframes corepulse{0%,100%{box-shadow:0 0 0 10px var(--gold-soft),0 22px 55px -18px rgba(47,212,212,.5)}50%{box-shadow:0 0 0 22px rgba(47,212,212,.04),0 22px 68px -18px rgba(47,212,212,.8)}}
+.iot-ex{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.exc{border:1px solid var(--line);border-radius:var(--r);padding:32px;background:linear-gradient(165deg,var(--panel),var(--bg-2));transition:border-color .3s,transform .3s}
+.exc:hover{border-color:var(--line-strong);transform:translateY(-4px)}
+.exc-head{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.exc-ico{width:54px;height:54px;border-radius:14px;flex:0 0 auto;display:grid;place-items:center;background:var(--gold-soft);border:1px solid rgba(47,212,212,.22)}
+.exc-ico svg{width:27px;height:27px;stroke:var(--gold);fill:none}
+.exc-head .tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.exc-head h3{font-size:1.38rem;margin-top:4px}
+.exc ul{list-style:none;display:grid;gap:12px}
+.exc li{display:flex;gap:11px;font-size:15px;color:var(--ink-dim)}
+.exc li svg{width:18px;height:18px;stroke:var(--gold);flex:0 0 auto;margin-top:3px;fill:none}
+@media(max-width:860px){
+  .iot-flow{grid-template-columns:1fr;gap:22px;justify-items:stretch;max-width:430px;margin-inline:auto}
+  .flow-core::before,.flow-core::after{display:none}
+  .flow-core{padding:6px 0}
+  .iot-ex{grid-template-columns:1fr}
+}
+
+/* ---------- Reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-card{order:-1;display:none}
+  .why{grid-template-columns:1fr}
+  .contact-card{grid-template-columns:1fr}
+  .contact-aside{border-right:0;border-bottom:1px solid var(--line)}
+  .proc{grid-template-columns:1fr 1fr}
+  .step:nth-child(2){border-right:0}
+  .tst-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .nav-links{
+    position:fixed;top:74px;left:0;right:0;flex-direction:column;gap:0;
+    background:rgba(10,16,32,.97);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);padding:8px 0;
+    transform:translateY(-130%);transition:transform .4s var(--ease);
+  }
+  .nav-links.open{transform:none}
+  .nav-links a{padding:16px 28px;width:100%}
+  .nav-links a::after{display:none}
+  .nav-cta .btn-ghost{display:none}
+  .burger{display:block}
+  .aud-grid,.svc-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .row2{grid-template-columns:1fr}
+  .hero{padding:130px 0 70px}
+  section.block{padding:72px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#111a30"/><path d="M50 18 L58 42 L82 50 L58 58 L50 82 L42 58 L18 50 L42 42 Z" fill="#2fd4d4"/></svg>
+      Adapta<span style="color:var(--gold)">IA</span>
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#integraciones">Equipos + IA</a>
+      <a href="#proceso">Cómo trabajo</a>
+      <a href="#nosotros">Para quién</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contacto" class="btn btn-primary">Diagnóstico gratis <span class="arr">→</span></a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow reveal">Asesorías en Inteligencia Artificial</span>
+      <h1 class="display reveal d1">Lleva la IA de la teoría a <span class="serif-italic">resultados reales.</span></h1>
+      <p class="lead reveal d2">Acompaño a <strong>personas y empresas</strong> a adoptar inteligencia artificial con estrategia: menos tareas repetitivas, mejores decisiones y más tiempo para lo que de verdad importa.</p>
+      <div class="hero-cta reveal d3">
+        <a href="#contacto" class="btn btn-primary">Agenda tu diagnóstico <span class="arr">→</span></a>
+        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      </div>
+      <div class="trust reveal d4">
+        <span><i class="dot"></i> Diagnóstico inicial sin costo</span>
+        <span><i class="dot"></i> 100% remoto · Chile y LatAm</span>
+        <span><i class="dot"></i> Soluciones a tu medida</span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal d2" aria-hidden="true">
+      <span class="hc-badge">IA aplicada</span>
+      <div class="hc-row">
+        <div class="hc-ico"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1m0-12.8l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <div><b>Estrategia clara</b><p>Una hoja de ruta, no solo herramientas sueltas.</p></div>
+      </div>
+      <div class="hc-row">
+        <div class="hc-ico"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2.4"/></svg></div>
+        <div><b>Procesos automatizados</b><p>Tareas repetitivas que se hacen solas.</p></div>
+      </div>
+      <div class="hc-row">
+        <div class="hc-ico"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-6A8.5 8.5 0 1 1 21 11.5Z"/></svg></div>
+        <div><b>Atención 24/7</b><p>Chatbots y agentes que responden por ti.</p></div>
+      </div>
+      <div class="hc-row">
+        <div class="hc-ico"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 4 3 8l9 4 9-4-9-4ZM3 8v6m6 1 3 1.4L18 15"/></svg></div>
+        <div><b>Equipos capacitados</b><p>Tu gente usando IA con confianza.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STRIP ================= -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Automatización<span></span></span>
+    <span>Equipos conectados (IoT)<span></span></span>
+    <span>ChatGPT &amp; Copilots<span></span></span>
+    <span>Chatbots a medida<span></span></span>
+    <span>Control de clima<span></span></span>
+    <span>Análisis de datos<span></span></span>
+    <span>Productividad<span></span></span>
+    <span>Capacitación<span></span></span>
+    <span>Automatización<span></span></span>
+    <span>Equipos conectados (IoT)<span></span></span>
+    <span>ChatGPT &amp; Copilots<span></span></span>
+    <span>Chatbots a medida<span></span></span>
+    <span>Control de clima<span></span></span>
+    <span>Análisis de datos<span></span></span>
+    <span>Productividad<span></span></span>
+    <span>Capacitación<span></span></span>
+  </div>
+</div>
+
+<!-- ================= AUDIENCE ================= -->
+<section class="block" id="nosotros">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Para quién</span>
+      <h2>Sea cual sea tu punto de partida, hay un camino con IA.</h2>
+      <p>Trabajo con dos mundos que se potencian entre sí: profesionales que quieren dar un salto, y empresas que buscan eficiencia y crecimiento.</p>
+    </div>
+    <div class="aud-grid">
+      <article class="aud reveal d1">
+        <span class="glyph">P</span>
+        <span class="tag">Personas &amp; profesionales</span>
+        <h3>Potencia tu trabajo y tu carrera</h3>
+        <p>Aprende a usar la IA como una ventaja diaria, sin tecnicismos y con aplicaciones reales para lo que haces.</p>
+        <ul>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Multiplica tu productividad personal</li>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Automatiza tareas de tu emprendimiento</li>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Suma una habilidad clave a tu CV</li>
+        </ul>
+      </article>
+      <article class="aud reveal d2">
+        <span class="glyph">E</span>
+        <span class="tag">Empresas &amp; equipos</span>
+        <h3>Reduce costos y escala con IA</h3>
+        <p>Integra inteligencia artificial en tus procesos para liberar a tu equipo de lo repetitivo y tomar mejores decisiones.</p>
+        <ul>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Automatiza atención y operaciones</li>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Decisiones basadas en tus datos</li>
+          <li><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg> Capacita a tu equipo para escalar</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="block" id="servicios">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Servicios</span>
+      <h2>Cuatro formas de poner la IA a trabajar para ti.</h2>
+      <p>Desde la estrategia hasta la implementación. Empezamos por donde generes más impacto, rápido.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal d1">
+        <span class="num">01</span>
+        <div class="ico"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="3.6"/><path d="M5.6 5.6 7.7 7.7m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+        <h3>Consultoría estratégica</h3>
+        <p>Diagnóstico de oportunidades y una hoja de ruta clara para adoptar IA en tu negocio, sin perderte en la tecnología ni gastar de más.</p>
+      </article>
+      <article class="svc reveal d2">
+        <span class="num">02</span>
+        <div class="ico"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 7h11M4 12h16M4 17h8"/><circle cx="18" cy="7" r="2.3"/><circle cx="15" cy="17" r="2.3"/></svg></div>
+        <h3>Automatización de procesos</h3>
+        <p>Identificamos las tareas repetitivas y las automatizamos con IA: correos, documentos, reportes y flujos de trabajo completos.</p>
+      </article>
+      <article class="svc reveal d3">
+        <span class="num">03</span>
+        <div class="ico"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12 7.6L3 21l1.9-6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></div>
+        <h3>Chatbots y agentes de IA</h3>
+        <p>Asistentes virtuales a medida que atienden a tus clientes, responden preguntas frecuentes y trabajan por ti las 24 horas.</p>
+      </article>
+      <article class="svc reveal d4">
+        <span class="num">04</span>
+        <div class="ico"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 4 3 8l9 4 9-4-9-4Z"/><path d="M3 8v6m6 1 3 1.4L18 15V9.5"/></svg></div>
+        <h3>Capacitación y talleres</h3>
+        <p>Formación práctica para ti o tu equipo: ChatGPT, prompts efectivos, automatización y herramientas de IA aplicadas al trabajo real.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTEGRATIONS / IoT ================= -->
+<section class="block iot" id="integraciones">
+  <div class="container">
+    <div class="sec-head reveal" style="max-width:780px">
+      <span class="eyebrow">Nuestro diferencial · IoT + IA</span>
+      <h2>No solo software: conectamos tus <span class="serif-italic">máquinas y equipos</span> a la IA.</h2>
+      <p>Integramos sensores, dispositivos y maquinaria a modelos de inteligencia artificial. Tus equipos dejan de solo funcionar: empiezan a avisar, optimizarse y trabajar solos.</p>
+    </div>
+
+    <div class="iot-flow reveal d1">
+      <div class="flow-col left">
+        <span class="lbl">Tus equipos</span>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 3s6 6.7 6 11a6 6 0 0 1-12 0c0-4.3 6-11 6-11Z"/></svg> Vending de agua</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M10 13.6V5a2 2 0 1 1 4 0v8.6a4 4 0 1 1-4 0Z"/><path d="M12 9.5v5.5"/></svg> Control de clima</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M5 12a10 10 0 0 1 14 0M8 15a6 6 0 0 1 8 0"/><circle cx="12" cy="18" r="1.2"/></svg> Sensores IoT</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"/></svg> Maquinaria</div>
+      </div>
+      <div class="flow-core"><div class="core">IA<small>NÚCLEO</small></div></div>
+      <div class="flow-col right">
+        <span class="lbl">Resultados con IA</span>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Monitoreo 24/7</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M10.5 21a2 2 0 0 0 3 0"/></svg> Alertas automáticas</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M14.7 6.3a4 4 0 0 0-5.2 5l-6.2 6.2a1.5 1.5 0 0 0 2.1 2.1l6.2-6.2a4 4 0 0 0 5-5.2l-2.5 2.5-2.3-.6-.6-2.3 2.5-2.5Z"/></svg> Mantenimiento predictivo</div>
+        <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 6h2"/><circle cx="12" cy="17" r="1.2"/></svg> Control remoto</div>
+      </div>
+    </div>
+
+    <div class="iot-ex">
+      <article class="exc reveal d1">
+        <div class="exc-head">
+          <div class="exc-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 3s6 6.7 6 11a6 6 0 0 1-12 0c0-4.3 6-11 6-11Z"/></svg></div>
+          <div><span class="tag">Caso de ejemplo</span><h3>Vending de agua inteligente</h3></div>
+        </div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Monitorea el stock y el consumo en tiempo real</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Avisa automáticamente cuándo reponer</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Detecta fallas antes de que la máquina se detenga</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Reportes de ventas y uso por ubicación</li>
+        </ul>
+      </article>
+      <article class="exc reveal d2">
+        <div class="exc-head">
+          <div class="exc-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M10 13.6V5a2 2 0 1 1 4 0v8.6a4 4 0 1 1-4 0Z"/><path d="M12 9.5v5.5"/></svg></div>
+          <div><span class="tag">Caso de ejemplo</span><h3>Control de clima automatizado</h3></div>
+        </div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Ajusta la temperatura según ocupación y clima</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Reduce el consumo energético de forma automática</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Alertas ante anomalías o consumo excesivo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg> Monitoreo y control remoto desde cualquier lugar</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="block" id="proceso">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cómo trabajo</span>
+      <h2>Un proceso simple, transparente y orientado a resultados.</h2>
+    </div>
+    <div class="proc reveal d1">
+      <div class="step">
+        <span class="n">01</span>
+        <h3>Diagnóstico</h3>
+        <p>Conversamos sobre tu contexto, objetivos y oportunidades reales con IA.</p>
+      </div>
+      <div class="step">
+        <span class="n">02</span>
+        <h3>Estrategia</h3>
+        <p>Diseño un plan priorizado: primero las victorias rápidas, luego la visión a futuro.</p>
+      </div>
+      <div class="step">
+        <span class="n">03</span>
+        <h3>Implementación</h3>
+        <p>Ponemos en marcha las soluciones, paso a paso y de forma medible.</p>
+      </div>
+      <div class="step">
+        <span class="n">04</span>
+        <h3>Acompañamiento</h3>
+        <p>Medimos resultados, ajustamos y seguimos mejorando de forma continua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY NOW ================= -->
+<section class="block" id="porque">
+  <div class="container why">
+    <div class="reveal">
+      <span class="eyebrow">Por qué ahora</span>
+      <h2 style="font-size:clamp(1.9rem,3.6vw,2.8rem);margin:18px 0 8px">La IA dejó de ser opcional. La ventaja es de quien la adopta primero.</h2>
+      <ul class="why-list">
+        <li><span class="b"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 2 4.5 13H11l-1 9 8.5-11H12l1-9Z"/></svg></span><div><strong>Resultados en semanas, no en meses</strong><p>Empezamos por aplicaciones concretas que generan impacto rápido.</p></div></li>
+        <li><span class="b"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 0v10l6 3"/></svg></span><div><strong>Sin jerga técnica</strong><p>Traduzco la tecnología a decisiones de negocio que entiendes.</p></div></li>
+        <li><span class="b"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>A tu medida y presupuesto</strong><p>Soluciones que se ajustan a tu realidad, no plantillas genéricas.</p></div></li>
+      </ul>
+    </div>
+    <div class="stats reveal d1">
+      <div class="stat"><b>+10h</b><span>ahorradas por semana automatizando tareas</span></div>
+      <div class="stat"><b>24/7</b><span>atención con asistentes de IA</span></div>
+      <div class="stat"><b>0</b><span>conocimientos técnicos necesarios para empezar</span></div>
+      <div class="stat"><b>1:1</b><span>acompañamiento personalizado en cada etapa</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS =================
+     ✏️ Reemplaza estos testimonios por casos reales cuando los tengas.
+     Los testimonios reales son tu mejor herramienta de venta. -->
+<section class="block" id="testimonios">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Resultados</span>
+      <h2>Lo que dicen quienes ya dieron el paso.</h2>
+    </div>
+    <div class="tst-grid">
+      <article class="tst reveal d1">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Automatizamos la respuesta a clientes y liberamos horas del equipo cada día. El cambio se notó en la primera semana.”</p>
+        <div class="who"><span class="av">M</span><div><b>María José R.</b><span>Gerenta de operaciones, retail</span></div></div>
+      </article>
+      <article class="tst reveal d2">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Pasé de no saber usar IA a aplicarla todos los días en mi consultora. La capacitación fue clara y muy práctica.”</p>
+        <div class="who"><span class="av">C</span><div><b>Carlos M.</b><span>Profesional independiente</span></div></div>
+      </article>
+      <article class="tst reveal d3">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“El chatbot atiende consultas a toda hora y nuestros clientes lo aman. Una inversión que se pagó sola.”</p>
+        <div class="who"><span class="av">P</span><div><b>Paula V.</b><span>Fundadora, e-commerce</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="block" id="preguntas">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvamos tus dudas antes de empezar.</h2>
+    </div>
+    <div class="faq reveal d1">
+      <details class="qa"><summary>¿Necesito conocimientos técnicos? <span class="plus"></span></summary><div class="ans">Para nada. Mi trabajo es justamente traducir la tecnología a algo claro y aplicable. Empezamos desde donde estés, sin tecnicismos.</div></details>
+      <details class="qa"><summary>¿Trabajas con personas o solo con empresas? <span class="plus"></span></summary><div class="ans">Con ambos. Tengo servicios pensados para profesionales y emprendedores que quieren potenciar su trabajo, y para empresas que buscan automatizar procesos y escalar.</div></details>
+      <details class="qa"><summary>¿Cómo es el diagnóstico inicial? <span class="plus"></span></summary><div class="ans">Es una conversación sin costo de 30 a 45 minutos donde entiendo tu situación y detecto oportunidades concretas con IA. Al final tendrás una idea clara de los próximos pasos, sin compromiso.</div></details>
+      <details class="qa"><summary>¿Atiendes de forma remota? <span class="plus"></span></summary><div class="ans">Sí. Trabajo 100% online, lo que me permite acompañar a clientes en todo Chile y Latinoamérica con la misma cercanía.</div></details>
+      <details class="qa"><summary>¿Cuánto cuesta una asesoría? <span class="plus"></span></summary><div class="ans">Depende del alcance y de tus objetivos. Por eso el diagnóstico es gratuito: a partir de él te entrego una propuesta clara y a tu medida, para que sepas exactamente qué inviertes y qué obtienes.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="block contact" id="contacto">
+  <div class="container">
+    <div class="contact-card reveal">
+      <aside class="contact-aside">
+        <span class="eyebrow">Da el primer paso</span>
+        <h2>Hablemos de tu próximo salto con IA.</h2>
+        <p>Cuéntame qué tienes en mente y te respondo con una propuesta concreta. El diagnóstico inicial es sin costo y sin compromiso.</p>
+        <div class="ci"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg> impo.rrchile@gmail.com</div>
+        <div class="ci"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 0v10l6 3"/></svg> Respuesta en menos de 24 horas</div>
+        <div class="ci"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8Z"/></svg> Remoto · Chile y Latinoamérica</div>
+      </aside>
+      <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- ⚠️ IMPORTANTE: reemplaza la clave de abajo por tu access_key gratuita de https://web3forms.com (ver instrucciones abajo del código). -->
+        <input type="hidden" name="access_key" value="TU_ACCESS_KEY_DE_WEB3FORMS" />
+        <input type="hidden" name="subject" value="Nuevo contacto desde AdaptaIA.cl" />
+        <input type="hidden" name="from_name" value="Sitio web Adapta IA" />
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+          </div>
+          <div class="field">
+            <label for="tipo">¿Eres…?</label>
+            <select id="tipo" name="tipo">
+              <option>Una persona / profesional</option>
+              <option>Una empresa / equipo</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="mensaje">¿En qué te puedo ayudar?</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame brevemente qué buscas lograr con IA…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar y agendar mi diagnóstico <span class="arr">→</span></button>
+        <p class="form-note">Al enviar aceptas ser contactado por correo. No comparto tus datos con terceros.</p>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#inicio" class="brand">
+          <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#111a30"/><path d="M50 18 L58 42 L82 50 L58 58 L50 82 L42 58 L18 50 L42 42 Z" fill="#2fd4d4"/></svg>
+          Adapta<span style="color:var(--gold)">IA</span>
+        </a>
+        <p>Asesorías en inteligencia artificial para personas y empresas. Estrategia, automatización y capacitación que generan resultados reales.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#nosotros">Para quién</a>
+        <a href="#preguntas">Preguntas</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="#contacto">Agenda tu diagnóstico</a>
+        <a href="mailto:impo.rrchile@gmail.com">impo.rrchile@gmail.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Adapta IA · Todos los derechos reservados.</span>
+      <span>Hecho con foco en resultados.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+/* Nav scroll state */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+
+/* Mobile menu */
+const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+burger.addEventListener('click',()=>{const o=links.classList.toggle('open');burger.classList.toggle('open',o);burger.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú')});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');burger.classList.remove('open')}));
+
+/* Reveal on scroll */
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Year */
+document.getElementById('year').textContent=new Date().getFullYear();
+
+/* Form submit via Web3Forms (AJAX, no redirect) */
+const form=document.getElementById('form'),msg=document.getElementById('formMsg');
+form.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const key=form.querySelector('[name=access_key]').value;
+  if(key.includes('TU_ACCESS_KEY')){
+    msg.className='form-msg err';
+    msg.textContent='⚠️ Falta configurar la clave del formulario (access_key de Web3Forms). Revisa las instrucciones.';
+    return;
+  }
+  const btn=form.querySelector('button[type=submit]');const orig=btn.innerHTML;
+  btn.innerHTML='Enviando…';btn.disabled=true;
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    const data=await res.json();
+    if(data.success){
+      msg.className='form-msg ok';
+      msg.textContent='✓ ¡Gracias! Recibí tu mensaje. Te respondo dentro de las próximas 24 horas.';
+      form.reset();
+    }else{throw new Error(data.message||'error')}
+  }catch(err){
+    msg.className='form-msg err';
+    msg.textContent='Hubo un problema al enviar. Escríbeme directo a impo.rrchile@gmail.com';
+  }finally{btn.innerHTML=orig;btn.disabled=false}
+});
+</script>
+</body>
+</html>
